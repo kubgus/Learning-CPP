@@ -4,13 +4,16 @@ using namespace std;
 
 int main()
 {
+    string phrase = "My name is kubgus!";
+    cout << phrase << endl;
+    cout << phrase.length() << endl;
+    cout << phrase[0] << endl;
+    phrase[0] = 'B';
+    cout << phrase << endl;
+    cout << phrase.find("By", 0) << endl;
+    cout << phrase.find("kubgus", 5) << endl;
+    string phrasePart = phrase.substr(3, 4);
+    cout << phrasePart << endl;
 
-    char grade = 'A';
-    string phrase = "Pretty cool stuff...";
-    int age = 14;
-    float decimal = 3.14;
-    double pi = 3.14159;
-    bool knowledge = true;
-
-    return 0;
+    system("pause");
 }
