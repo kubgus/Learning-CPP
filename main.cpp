@@ -12,5 +12,5 @@ int main()
     double pi = 3.14159;
     bool knowledge = true;
 
-    return 0;
+    system("pause");
 }
