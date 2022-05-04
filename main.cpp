@@ -15,7 +15,7 @@ int main()
     cin.clear();
     cin.sync();
     //^ These two lines flush the input buffer after one
-    //^ input has already been registered
+    //^ input has already been registered (only with getline() function)
     getline(cin, name);
     cout << "Hello, " << name << "!" << endl;
 
