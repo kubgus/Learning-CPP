@@ -10,9 +10,16 @@ I want to make:
 
 And I'll probably come up with more projects along the way...
 
+---
+
 ### Will I ever seriously use this language?
 Probably not.
 ### Will it spice up my resume?
 Hopefully.
 ### Will it be fun?
 Absolutely!
+
+---
+
+#### Credits:
+[freeCodeCamp.org](https://www.youtube.com/watch?v=vLnPwxZdW4Y)
