@@ -5,19 +5,16 @@ using namespace std;
 
 int main()
 {
-    int numOne;
-    int numTwo;
+    double num1, num2;
+    //^ Define 2 variables in one line
 
     cout << "First Number: ";
-    cin >> numOne;
-
-    cin.clear();
-    cin.sync();
+    cin >> num1;
 
     cout << "Second Number: ";
-    cin >> numTwo;
+    cin >> num2;
 
-    cout << numOne << " + " << numTwo << " = " << numOne + numTwo << endl;
+    cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
 
     system("pause");
 }
