@@ -14,6 +14,11 @@ int main()
     coolWords[5] = "incomprehensibilities";
     cout << coolWords[5] << endl; // incomprehensibilities
     cout << coolWords[4] << endl; // *null*
+    coolWords[3] = 3;
+    cout << coolWords[3] << endl; // ♥
+    //^ I found out that changing a value to a number
+    //^ in a string array makes it the alt code of that number
+    //^ However, this can not be done with string variables
 
     system("pause");
 }
