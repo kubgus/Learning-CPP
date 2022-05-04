@@ -2,38 +2,51 @@
 
 using namespace std;
 
+int getMaxFrom2(int num1, int num2)
+{
+    int result;
+
+    if (num1 > num2)
+    {
+        result = num1;
+    }
+    else
+    {
+        result = num2;
+    }
+
+    return result;
+}
+
+int getMaxFrom3(int num1, int num2, int num3)
+{
+    int result;
+
+    if (num1 >= num2 && num1 >= num3)
+    {
+        result = num1;
+    }
+    else if (num2 >= num1 && num2 >= num3)
+    {
+        result = num2;
+    }
+    else
+    {
+        result = num3;
+    }
+
+    return result;
+}
+
 int main()
 {
-    bool knowledge = true;
-    bool confidence = true;
+    cout << getMaxFrom2(3, 10) << endl; // 10
+    cout << getMaxFrom2(5, 4) << endl;  // 5
+    cout << getMaxFrom2(6, 6) << endl;  // 6
 
-    // I didn't choose to write curly brackets on the next line, my formatter did, sorry
-
-    if (knowledge && confidence)
-    {
-        cout << "You are smart and confident." << endl;
-    }
-    else if (knowledge && !confidence)
-    {
-        cout << "You are smart, but you don't like talking about it." << endl;
-    }
-    else if (!knowledge && confidence)
-    {
-        cout << "You pretend to be smart." << endl;
-    }
-    else
-    {
-        cout << "You just need more time." << endl;
-    }
-
-    if (knowledge || confidence)
-    {
-        cout << "At least one parameter is true." << endl;
-    }
-    else
-    {
-        cout << "Both parameters are false." << endl;
-    }
+    cout << getMaxFrom3(3, 10, 5) << endl; // 10
+    cout << getMaxFrom3(5, 4, 13) << endl; // 13
+    cout << getMaxFrom3(6, 6, 6) << endl;  // 6
 
     system("pause");
 }
