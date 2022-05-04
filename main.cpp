@@ -4,7 +4,6 @@ using namespace std;
 
 int main()
 {
-
     char grade = 'A';
     string phrase = "Pretty cool stuff...";
     int age = 14;
