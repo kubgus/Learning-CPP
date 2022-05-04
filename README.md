@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/WARNING-Most%20of%20this%20code%20is%20highly%20inefficient%20for%20learning%20purposes-red)
+[![](https://img.shields.io/badge/WARNING-Most%20of%20this%20code%20is%20highly%20inefficient%20for%20learning%20purposes-red)](https://github.com/kubgus/Learning-CPP/)
 
 # I decided to learn C++
 
