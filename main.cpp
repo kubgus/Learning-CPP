@@ -13,5 +13,5 @@ int main()
     cout << "I am " << age << " years old." << endl;
     cout << "The first word was " << noun << "." << endl;
 
-    return 0;
+    system("pause");
 }
