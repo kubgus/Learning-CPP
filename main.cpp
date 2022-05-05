@@ -2,38 +2,49 @@
 
 using namespace std;
 
+string getDayName(int dayNum)
+{
+    string dayName;
+
+    // Cleaner than if statements
+    switch (dayNum)
+    {
+    case 0:
+        dayName = "Sunday";
+        break; // don't check for other cases below if this one is true
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    default:
+        dayName = "Invalid Day Number";
+    }
+
+    return dayName;
+}
+
 int main()
 {
-    bool knowledge = true;
-    bool confidence = true;
+    int dayNum;
 
-    // I didn't choose to write curly brackets on the next line, my formatter did, sorry
+    cout << "Day Number: ";
+    cin >> dayNum;
 
-    if (knowledge && confidence)
-    {
-        cout << "You are smart and confident." << endl;
-    }
-    else if (knowledge && !confidence)
-    {
-        cout << "You are smart, but you don't like talking about it." << endl;
-    }
-    else if (!knowledge && confidence)
-    {
-        cout << "You pretend to be smart." << endl;
-    }
-    else
-    {
-        cout << "You just need more time." << endl;
-    }
-
-    if (knowledge || confidence)
-    {
-        cout << "At least one parameter is true." << endl;
-    }
-    else
-    {
-        cout << "Both parameters are false." << endl;
-    }
+    cout << getDayName(dayNum) << endl;
 
     system("pause");
 }
