@@ -4,21 +4,16 @@ using namespace std;
 
 int main()
 {
-    // Always checks the condition before running the code (while loop)
-    int index1 = 1;
-    while (index1 <= 5)
+    for (int i = 1; i <= 5; i++)
     {
-        cout << index1 << endl; // 1-5
-        index1++;
+        cout << i << endl; // 1-5
     }
 
-    // Executes the code first before checking the condition to run again (do-while loop)
-    int index2 = 6;
-    do
+    int nums[5] = {1, 2, 5, 7, 3};
+    for (int i = 0; i < 5; i++)
     {
-        cout << index2 << endl; // 6
-        index2++;
-    } while (index2 <= 5);
+        cout << nums[i] << endl; // 1, 2, 5, 7, 3
+    }
 
     system("pause");
 }
