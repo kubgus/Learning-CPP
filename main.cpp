@@ -4,12 +4,28 @@ using namespace std;
 
 int main()
 {
-    char grade = 'A';
-    string phrase = "Pretty cool stuff...";
-    int age = 14;
-    float decimal = 3.14;
-    double pi = 3.14159;
-    bool knowledge = true;
+    // Explanation here: https://www.youtube.com/watch?v=vLnPwxZdW4Y&t=10751s // freeCodeCamp.org // I'm too lazy
+
+    int age = 32;
+    double gpa = 1.6;
+    string name = "Kubo";
+
+    cout << "Age: " << &age << endl;   // 0x0000
+    cout << "GPA: " << &gpa << endl;   // 0x0000
+    cout << "Name: " << &name << endl; // 0x0000
+
+    int *pAge = &age;
+    double *pGpa = &gpa;
+    string *pName = &name;
+
+    cout << "Age: " << pAge << endl;   // 0x0000
+    cout << "GPA: " << pGpa << endl;   // 0x0000
+    cout << "Name: " << pName << endl; // 0x0000
+
+    // Dereferencing
+    cout << "Age: " << *pAge << endl;   // 32
+    cout << "GPA: " << *pGpa << endl;   // 1.6
+    cout << "Name: " << *pName << endl; // Kubo
 
     system("pause");
 }
