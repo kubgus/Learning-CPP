@@ -1,24 +1,57 @@
 #include <iostream>
+#include <random>
 
 using namespace std;
 
 int main()
 {
-    // Always checks the condition before running the code (while loop)
-    int index1 = 1;
-    while (index1 <= 5)
+    // This code gets a random integer from 1 to 100
+    // Please ignore
+    random_device rd;
+    default_random_engine eng(rd());
+    uniform_int_distribution<int> distr(1, 100);
+    //----------------------------------------------
+
+    int secret = distr(eng); // random integer from 1 to 100
+    int guess;
+    int attepts = 0;
+    int limit = 10;
+    bool limitHit = false;
+
+    while (guess != secret && !limitHit)
     {
-        cout << index1 << endl; // 1-5
-        index1++;
+        if (attepts < limit)
+        {
+            cout << "Guess: ";
+            cin >> guess;
+
+            if (guess > secret)
+            {
+                cout << "The secret number is lower." << endl;
+            }
+            else if (guess < secret && !limitHit)
+            {
+                cout << "The secret number is higher." << endl;
+            }
+
+            attepts++;
+        }
+        else
+        {
+            limitHit = true;
+        }
     }
 
-    // Executes the code first before checking the condition to run again (do-while loop)
-    int index2 = 6;
-    do
+    if (!limitHit)
     {
-        cout << index2 << endl; // 6
-        index2++;
-    } while (index2 <= 5);
+        cout << "CONGRATULATIONS, You guessed correctly!" << endl;
+        cout << "It took you " << attepts << " attepts out of " << limit << "." << endl;
+    }
+    else
+    {
+        cout << "You lost!" << endl;
+        cout << "The secret number was " << secret << "." << endl;
+    }
 
     system("pause");
 }
