@@ -4,16 +4,14 @@ using namespace std;
 
 int main()
 {
-    for (int i = 1; i <= 5; i++)
-    {
-        cout << i << endl; // 1-5
-    }
+    // 2D Array / Matrix
+    int grid[3][2] = {{1, 2},
+                      {3, 4},
+                      {5, 6}};
 
-    int nums[5] = {1, 2, 5, 7, 3};
-    for (int i = 0; i < 5; i++)
-    {
-        cout << nums[i] << endl; // 1, 2, 5, 7, 3
-    }
+    cout << grid[0][0] << endl; // 1
+    cout << grid[1][0] << endl; // 3
+    cout << grid[2][1] << endl; // 6
 
     system("pause");
 }
