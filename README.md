@@ -1,4 +1,5 @@
 [![](https://img.shields.io/badge/WARNING-Most%20of%20this%20code%20is%20highly%20inefficient%20for%20learning%20purposes-red)](https://github.com/kubgus/Learning-CPP/)
+[![](https://img.shields.io/badge/COMPILED%20IN-GCC%20(mingw--w64)-blue)](https://www.mingw-w64.org/)
 
 # I decided to learn C++
 
