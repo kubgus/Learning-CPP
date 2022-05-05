@@ -6,6 +6,7 @@ After my experience with Javascript, Python, and other languages, I want to try 
 
 ## My Plan
 I want to make:
+- [X] [A number guessing game](https://github.com/kubgus/Learning-CPP/tree/Guessing-Game)
 - [ ] A platformer game
 - [ ] An infinite scroller game
 - [ ] A posture check app
