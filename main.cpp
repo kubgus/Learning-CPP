@@ -19,5 +19,12 @@ int main()
 
     cout << "You can also add a comment at the end of a line." << endl; // like this
 
+    cout << "Comments can also look..." /* like this */ << endl;
+    /*
+        These can be used to write
+        multiple lines of comments or
+        add comments right into the lines
+    */
+
     system("pause");
 }
