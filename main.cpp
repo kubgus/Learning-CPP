@@ -16,8 +16,8 @@ int main()
     int index2 = 6;
     do
     {
-        cout << index1 << endl; // 6
-        index1++;
+        cout << index2 << endl; // 6
+        index2++;
     } while (index2 <= 5);
 
     system("pause");
