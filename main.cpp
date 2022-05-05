@@ -2,18 +2,21 @@
 
 using namespace std;
 
-int main()
+int power(int base, int power)
 {
-    for (int i = 1; i <= 5; i++)
+    int result = 1;
+
+    for (int i = 0; i < power; i++)
     {
-        cout << i << endl; // 1-5
+        result *= base;
     }
 
-    int nums[5] = {1, 2, 5, 7, 3};
-    for (int i = 0; i < 5; i++)
-    {
-        cout << nums[i] << endl; // 1, 2, 5, 7, 3
-    }
+    return result;
+}
+
+int main()
+{
+    cout << power(5, 2) << endl; // 25
 
     system("pause");
 }
