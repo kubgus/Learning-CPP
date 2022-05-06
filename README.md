@@ -1,9 +1,12 @@
+[![](https://img.shields.io/badge/STATUS-Finished-brightgreen)](https://github.com/kubgus/Learning-CPP/)
 [![](https://img.shields.io/badge/WARNING-Most%20of%20this%20code%20is%20highly%20inefficient%20for%20learning%20purposes-red)](https://github.com/kubgus/Learning-CPP/)
 [![](https://img.shields.io/badge/COMPILED%20IN-GCC%20(mingw--w64)-blue)](https://www.mingw-w64.org/)
 
 # I decided to learn C++
 
-After my experience with Javascript, Python, and other languages, I want to try something new. So I decided to learn C++.
+After my experience with Javascript, Python, and other languages, I want to try something new. So I decided to learn C++.  
+This repository is made by following a [freeCodeCamp.org](https://www.youtube.com/watch?v=vLnPwxZdW4Y)[^1] tutorial.  
+I just cleared it up a bit and released the code.
 
 ## My Plan
 I want to make:
@@ -21,8 +24,6 @@ Probably not.
 Hopefully.
 ### Will it be fun?
 Absolutely!
-
----
-
-#### Credits:
-[freeCodeCamp.org](https://www.youtube.com/watch?v=vLnPwxZdW4Y)
+  
+  
+[^1]: [freeCodeCamp.org](https://www.youtube.com/watch?v=vLnPwxZdW4Y)
