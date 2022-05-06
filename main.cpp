@@ -2,43 +2,37 @@
 
 using namespace std;
 
-class Book
+class Student
 {
 public:
-    string title;
-    string author;
-    int pages;
+    string name;
+    string major;
+    double gpa;
 
-    Book() // Executed when values are not provided
+    Student(string aName, string aMajor, double aGpa)
     {
-        title = "No Title";
-        author = "No Author";
-        pages = 0;
+        name = aName;
+        major = aMajor;
+        gpa = aGpa;
     }
 
-    Book(string aTitle, string aAuthor, int aPages)
+    bool hasHonors()
     {
-        title = aTitle;
-        author = aAuthor;
-        pages = aPages;
+        if (gpa >= 3.5)
+        {
+            return true;
+        }
+        return false;
     }
 };
 
 int main()
 {
-    Book book1("Harry Potter", "JK Rowling", 300);
-    Book book2("Ur Special", "Ur Special", 70);
+    Student student1("Jake", "Programming", 4.5);
+    Student student2("Matthew", "Medicine", 2.6);
 
-    cout << book1.title << endl; // Harry Potter
-    cout << book2.pages << endl; // 70
-
-    book2.pages = 90;
-
-    cout << book2.pages << endl; // 90
-
-    Book book3;
-
-    cout << book3.author << endl; // No Author
+    cout << student1.hasHonors() << endl; // 1
+    cout << student2.hasHonors() << endl; // 0
 
     system("pause");
 }
