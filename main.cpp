@@ -2,53 +2,51 @@
 
 using namespace std;
 
-class Movie
+// Superclass
+class Chef
 {
-private:
-    string rating;
-
 public:
-    string title;
-    string director;
-
-    Movie(string aTitle, string aDirector, string aRating)
+    void makeChicken()
     {
-        title = aTitle;
-        director = aDirector;
-        setRating(aRating);
+        cout << "The chef makes chicken." << endl;
     }
 
-    void setRating(string aRating)
+    void makeSalad()
     {
-        if (aRating == "G" || aRating == "PG" || aRating == "PG-13" || aRating == "R" || aRating == "NR")
-        {
-            rating = aRating;
-        }
-        else
-        {
-            rating = "NR";
-        }
+        cout << "The chef makes a salad." << endl;
     }
 
-    string getRating()
+    void makeSpecialDish()
     {
-        return rating;
+        cout << "The chef makes BQQ ribs." << endl;
+    }
+};
+
+// Subclass
+class ItalianChef : public Chef // Italian Chef inherits all the functions of Chef
+{
+public:
+    void makePasta()
+    {
+        cout << "The chef makes pasta." << endl;
+    }
+
+    void makeSpecialDish()
+    {
+        cout << "The chef makes a pizza." << endl;
     }
 };
 
 int main()
 {
-    Movie avengers("The Avengers", "Joss Whedon", "PG-13");
+    Chef chef;
+    chef.makeChicken();     // The chef makes chicken.
+    chef.makeSpecialDish(); // The chef makes BQQ ribs.
 
-    cout << avengers.getRating() << endl; // PG-13
-
-    avengers.setRating("Dog");
-
-    cout << avengers.getRating() << endl; // NR
-
-    avengers.setRating("R");
-
-    cout << avengers.getRating() << endl; // R
+    ItalianChef italianChef;
+    italianChef.makeChicken();     // The chef makes chicken.
+    italianChef.makePasta();       // The chef makes pasta.
+    italianChef.makeSpecialDish(); // The chef makes a pizza.
 
     system("pause");
 }
